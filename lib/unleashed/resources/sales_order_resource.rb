@@ -47,5 +47,14 @@ module Unleashed
     def last
       all.last
     end
+
+    # Create a new sales_order
+    def create_or_update(attributes)
+      id = attributes[:Guid].present? ? attributes[:Guid] : ''
+      endpoint = 'SalesOrders'
+      endpoint << "/#{id}" if id.present?
+      response = JSON.parse(@client.post(endpoint, attributes).body)
+      Unleashed::SalesOrder.new(@client, response)
+    end
   end
 end
