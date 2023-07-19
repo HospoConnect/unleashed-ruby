@@ -144,7 +144,8 @@ module Unleashed
         invoices: InvoiceResource,
         currencies: CurrencyResource,
         payment_terms: PaymentTermResource,
-        companies: CompanyResource
+        companies: CompanyResource,
+        sales_orders: SalesOrderResource
       }
     end
 
