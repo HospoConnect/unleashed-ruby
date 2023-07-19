@@ -36,14 +36,14 @@ module Unleashed
 
     # Get a first sales_order in all
     #
-    # @return [Unleashed::Invoice]
+    # @return [Unleashed::SalesOrder]
     def first
       all.first
     end
 
     # Get a last sales_order in all
     #
-    # @return [Unleashed::Invoice]
+    # @return [Unleashed::SalesOrder]
     def last
       all.last
     end
