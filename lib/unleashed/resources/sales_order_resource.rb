@@ -24,7 +24,7 @@ module Unleashed
     end
 
     # Get a single sales_order
-    # /SalesOrders/E6E8163F-6911-40e9-B740-90E5A0A3A996 - returns details of a particular invoice.
+    # /SalesOrders/E6E8163F-6911-40e9-B740-90E5A0A3A996 - returns details of a particular sales_order.
     #
     # @param id [String] sales order ID.
     #
