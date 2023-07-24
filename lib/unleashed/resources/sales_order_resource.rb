@@ -20,7 +20,7 @@ module Unleashed
       endpoint << "/#{params[:Page]}" if params[:Page].present?
       response = JSON.parse(@client.get(endpoint, params).body)
       invoices = response.key?('Items') ? response['Items'] : []
-      invoices.map { |attributes| Unleashed::Invoice.new(@client, attributes) }
+      invoices.map { |attributes| Unleashed::SalesOrder.new(@client, attributes) }
     end
 
     # Get a single sales_order
