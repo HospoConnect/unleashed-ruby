@@ -4,7 +4,7 @@ module Unleashed
   # An individual product’s details can be viewed or updated by appending its identifier
   # (a GUID formatted as XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX) to the URI.
   #
-  # @see https://apidocs.unleashedsoftware.com/ProductPrices
+  # @see https://apidocs.unleashedsoftware.com/Products
   class ProductResource < BaseResource
     def model
       Unleashed::Product
