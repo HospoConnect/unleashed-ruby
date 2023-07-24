@@ -150,7 +150,8 @@ module Unleashed
         payment_terms: PaymentTermResource,
         companies: CompanyResource,
         sales_orders: SalesOrderResource,
-        product_prices: ProductPriceResource
+        product_prices: ProductPriceResource,
+        products: ProductPriceResource
       }
     end
 
