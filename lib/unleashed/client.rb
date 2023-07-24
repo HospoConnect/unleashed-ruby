@@ -8,6 +8,7 @@ require_relative 'models/payment_term'
 require_relative 'models/company'
 require_relative 'models/sales_order'
 require_relative 'models/product_price'
+require_relative 'models/products'
 require_relative 'resources/base_resource'
 require_relative 'resources/customer_resource'
 require_relative 'resources/invoice_resource'
@@ -16,6 +17,7 @@ require_relative 'resources/payment_term_resource'
 require_relative 'resources/company_resource'
 require_relative 'resources/sales_order_resource'
 require_relative 'resources/product_price_resource'
+require_relative 'resources/product_resource'
 require 'json'
 require 'faraday'
 
@@ -151,7 +153,7 @@ module Unleashed
         companies: CompanyResource,
         sales_orders: SalesOrderResource,
         product_prices: ProductPriceResource,
-        products: ProductPriceResource
+        products: ProductResource
       }
     end
 
